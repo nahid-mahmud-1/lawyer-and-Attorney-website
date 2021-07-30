@@ -11213,12 +11213,10 @@ textarea.form-control-lg {
 }
 .fun-facts-section {
   padding: 4.375rem 0rem;
-  padding: 6rem 0rem;
-  background: url(../images/fun-facts-section-bg.jpg) no-repeat center;
-  background-size: cover;
-}
-.fun-facts-section .section-top-title {
-  color: #fff;
+  padding: 8rem 0rem;
+  background: url(../images/fun-facts-section-bg.jpg) no-repeat bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .fun-facts-section .section-title {
   color: #fff;
@@ -11228,7 +11226,57 @@ textarea.form-control-lg {
   margin-top: 1.5rem;
   margin-bottom: 0;
 }
+.fun-facts-section .counter-box {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.fun-facts-section .counter-box h3 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+.fun-facts-section .counter-box h5 {
+  color: #eaa636;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
 
+@media (max-width: 767.98px) {
+  .fun-facts-section {
+    padding: 3rem 0rem;
+  }
+  .fun-facts-section .section-top-title, .fun-facts-section .section-title,
+.fun-facts-section .section-dsc {
+    text-align: center;
+  }
+  .fun-facts-section .section-hr-line {
+    margin: 1rem auto;
+  }
+  .fun-facts-section .section-dsc {
+    padding-bottom: 1rem;
+  }
+  .fun-facts-section .counter-box h3 {
+    font-size: 2rem !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .fun-facts-section {
+    padding: 3rem 0rem;
+  }
+  .fun-facts-section .section-top-title, .fun-facts-section .section-title,
+.fun-facts-section .section-dsc {
+    text-align: center;
+  }
+  .fun-facts-section .section-hr-line {
+    margin: 1rem auto;
+  }
+  .fun-facts-section .section-dsc {
+    padding: 1rem;
+  }
+  .fun-facts-section .counter-box h3 {
+    font-size: 2rem !important;
+  }
+}
 .team-section {
   padding: 4.375rem 0rem;
   background: #fff;
@@ -11438,6 +11486,7 @@ textarea.form-control-lg {
 }
 .footer-section {
   background: #111111;
+  position: relative;
 }
 .footer-section .footer-top {
   padding: 4.375rem 0rem;
@@ -11531,6 +11580,26 @@ textarea.form-control-lg {
 }
 .footer-section .footer-bottom .footer-social-box .footer-social-icons li a {
   color: #fff;
+}
+
+.top-to-bottom-box {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #fff;
+  background: #eaa636;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.125rem;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+}
+.top-to-bottom-box span {
+  color: #fff;
+  line-height: 2.5rem;
 }
 
 @media (max-width: 767.98px) {

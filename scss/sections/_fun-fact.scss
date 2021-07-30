@@ -20,13 +20,11 @@
 // FUN FACTS SECTION START
 .fun-facts-section{
     @include section-padding();
-    padding: 6rem 0rem;
-    background: url(../images/fun-facts-section-bg.jpg) no-repeat center;
-    background-size: cover;
+    padding: 8rem 0rem;
+    background: url(../images/fun-facts-section-bg.jpg) no-repeat bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
-    .section-top-title{
-        color: $white;
-    }
     .section-title{
         color: $white;
     }
@@ -34,5 +32,73 @@
         color: $white;
         margin-top: 1.5rem;
         margin-bottom: 0;
+    }
+    .counter-box{
+        text-align: center;
+        padding-bottom: 2rem;
+
+        h3{
+            color: $white;
+            font-size: 2.5rem;
+            margin-bottom: 0;
+        }
+        h5{
+            color: $primary;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+    }
+}
+
+
+
+
+// MEDIA QUERY FOR ALL DEVICES
+@include media-breakpoint-down(md){
+    .fun-facts-section{
+        padding: 3rem 0rem;
+
+        .section-top-title,.section-title,
+        .section-dsc{
+            text-align: center;
+        }
+        .section-hr-line{
+            margin: 1rem auto;
+        }
+        .section-dsc{
+            padding-bottom: 1rem;
+        }
+
+        .counter-box{
+
+            h3{
+                font-size: 2rem !important;
+            }
+        }
+    }
+}
+
+// For X-small devices
+@include media-breakpoint-down(sm){
+    .fun-facts-section{
+        padding: 3rem 0rem;
+
+        .section-top-title,.section-title,
+        .section-dsc{
+            text-align: center;
+        }
+        .section-hr-line{
+            margin: 1rem auto;
+        }
+        .section-dsc{
+            padding: 1rem;
+        }
+
+        .counter-box{
+
+            h3{
+                font-size: 2rem !important;
+            }
+        }
     }
 }

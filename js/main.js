@@ -1,3 +1,5 @@
+
+// TESTIMONIALS SECTION
 $('.testimonial-carousel').owlCarousel({
     loop:true,
     margin:10,
@@ -14,3 +16,6 @@ $('.testimonial-carousel').owlCarousel({
         }
     }
 })
+
+// ACTIVETED THE COUNTTO JS
+$('.timer').countTo();

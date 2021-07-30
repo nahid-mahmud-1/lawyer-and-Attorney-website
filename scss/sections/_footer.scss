@@ -20,6 +20,7 @@
 // FOOTER SECTION STYLE START
 .footer-section{
     background: $black;
+    position: relative;
 
     .footer-top{
         // for paddng
@@ -126,6 +127,35 @@
 
     }
 }
+
+// TOP TO BOTTOM STYLE
+.top-to-bottom-box{
+    width: 2.5rem;
+    height: 2.5rem;
+    color: $white;
+    background: $primary;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.125rem;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+
+    span{
+        color: $white;
+        line-height: 2.5rem;
+    }
+}
+
+
+
+
+
+
+
 
 
 
