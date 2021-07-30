@@ -1,0 +1,174 @@
+// BOOTSTRAP AND CUSTOM
+@use "../custom" as *;
+
+// IMPORT THE MIXINS
+@use "../components/mixins" as *;
+
+// IMPORT THE EXTENDS
+@use "../components/extend" as *;
+
+// IMPORT THE GLOBAL COMPONENTS
+@use "../components/global-style" as *;
+
+// IMPORT THE BUTTONS COMPONENTS
+@use "../components/buttons" as *;
+
+
+// FOOTER SECTION STYLE START
+.footer-section{
+    background: $black;
+
+    .footer-top{
+        // for paddng
+        @include section-padding();
+
+        .footer-address-box{
+            list-style: none;
+            margin-top: 2rem;
+            padding-left: 0;
+    
+            li{
+                color: $white;
+                font-size: 0.975rem;
+                
+                a{
+                    color: $white;
+                    text-decoration: none;
+                }
+            }
+            li::before{
+                color: $primary;
+                font-size: 0.95rem;
+                margin-right: 0.75rem;
+            }
+            .foot-location::before{
+                content: "\f3c5";
+                font-family: "FontAwesome";
+            }
+            .foot-number::before{
+                content: "\f879";
+                font-family: "FontAwesome";
+            }
+            .foot-mail::before{
+                content: "\f0e0";
+                font-family: "FontAwesome";
+            }
+            .foot-pdf::before{
+                content: "\f1c1";
+                font-family: "FontAwesome";
+            }
+        }
+        h6{
+            color: $primary;
+        }
+        .footer-practice-list-box{
+            padding-left: 0;
+            margin-top: 1rem;
+    
+            li{
+                color: $white;
+                font-size: 0.95rem;
+                margin-right: 0.75rem;
+                list-style: none;
+                line-height: 2rem;
+    
+                &::before{
+                    content: "\f00c";
+                    font-family: "FontAwesome";
+                    color: $primary;
+                    font-size: 0.75rem;
+                    margin-right: 0.75rem;
+                }
+            }
+        }
+        .footer-subs-text{
+            color: white;
+            margin-top: 1rem;
+        }
+    }
+    .footer-bottom{
+        padding: 1.5rem 0rem;
+        border-top: 1px solid rgba($white, 0.1);
+
+        .footer-copyright{
+            color: $white;
+            font-size: 0.875rem;
+        }
+        .footer-social-box{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+
+            .footer-social-icons{
+                padding-left: 0;
+                display: flex;
+                margin-bottom: 0;
+
+                li{
+                    list-style: none;
+                    width: 2.3rem;
+                    height: 2.3rem;
+                    background: $primary;
+                    text-align: center;
+                    line-height: 2.3rem;
+                    margin: 0rem 0.5rem;
+                    border-radius: 0.2rem;
+
+                    a{
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+
+// MEDIA QUERY FOR ALL DEVICES
+
+// Small Device
+@include media-breakpoint-down(md){
+    .footer-top{
+        padding: 3rem 0rem 2.5rem;
+    }
+    .footer-bottom{
+
+        .footer-copyright{
+            text-align: center;
+        }
+        .footer-social-box{
+            justify-content: center !important;
+            padding: 0.8rem 0rem;
+        }
+    }
+}
+
+// Mobile Device
+@include media-breakpoint-down(sm){
+
+    .footer-section{
+        .footer-top{
+            padding: 3rem 1.5rem 2rem;
+
+            .footer-practice-list-box{
+                margin-top: 0.5rem;
+            }
+            .footer-subs-text{
+                margin-top: 0.5rem;
+            }
+        }
+
+        .footer-bottom{
+
+            .footer-copyright{
+                text-align: center;
+            }
+            .footer-social-box{
+                justify-content: center;
+                padding: 0.8rem 0rem;
+            }
+        }
+    }
+}

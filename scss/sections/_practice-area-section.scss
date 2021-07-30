@@ -1,0 +1,139 @@
+// BOOTSTRAP AND CUSTOM
+@use "../custom" as *;
+
+// IMPORT THE MIXINS
+@use "../components/mixins" as *;
+
+// IMPORT THE EXTENDS
+@use "../components/extend" as *;
+
+// IMPORT THE GLOBAL COMPONENTS
+@use "../components/global-style" as *;
+
+// IMPORT THE BUTTONS COMPONENTS
+@use "../components/buttons" as *;
+
+// PRACTICE AREA SECTION START
+.practice-area-section{
+    background: $primary;
+
+    .practice-area-title{
+        width: 100%;
+        color: $white;
+        padding: 5.5rem;
+    }
+    .practice-area-item-box{
+        position: relative;
+        text-align: center;
+        background: $bg-color-1;
+        padding: 4.5rem 2.8rem 3.2rem;
+        height: 100%;
+        overflow: hidden;
+        // transition: 0.3s all;
+        @include theme-transition(0.3s all);
+
+        .top-icon{
+            color: $primary;
+            font-size: 2.5rem;
+        }
+        .item-box-title{
+            padding: 1rem 0rem .5rem;
+        }
+        .item-box-dsc{
+            
+        }
+        .custom-button-style{
+            background: $black;
+            border-color: $black;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            margin-top: 1rem;
+            @include theme-transition();
+
+            &:hover{
+                @include theme-box-shadow(2px 2px 20px 0px rgb(20 20 20 / 30%));
+            }
+        }
+        .box-bg-icon{
+            color: rgba($black, 0.4);
+            font-size: 15rem;
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            opacity: 0.1;
+            // transition: 2s all;
+            @include theme-transition(2s all);
+        }
+
+        &:hover{
+            background: $primary;
+            // box-shadow: 2px 2px 30px 0px rgb(0 0 0 / 20%);
+            @include theme-box-shadow(2px 2px 30px 0px rgb(0 0 0 / 20%));
+
+            .top-icon,.item-box-title,
+            .item-box-dsc{
+                color: $white;
+            }
+            .box-bg-icon{
+                transform: rotate(
+                    -25deg
+                    );
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+// MEDIA QUERY FOR ALL DEVICE
+
+// For Large devices
+@include media-breakpoint-down(xl){
+    .practice-area-section{
+
+        .practice-area-title{
+            padding: 2.4rem;
+        }
+        .practice-area-item-box{
+            padding: 3rem 1.4rem;
+        }
+    }
+}
+
+// For Medium devices
+@include media-breakpoint-down(lg){
+    .practice-area-section{
+
+        .practice-area-title{
+            text-align: center;
+            padding: 4.4rem;
+        }
+    }
+}
+
+// For Small devices
+@include media-breakpoint-down(md){
+    .practice-area-section{
+
+        .practice-area-title{
+            text-align: center;
+            padding: 4.4rem;
+        }
+    }
+}
+
+// For  X-Small devices
+@include media-breakpoint-down(sm){
+    .practice-area-section{
+
+        .practice-area-title{
+            text-align: center;
+            padding: 4.4rem;
+        }
+    }
+}
+

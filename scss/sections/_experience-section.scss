@@ -1,0 +1,96 @@
+// BOOTSTRAP AND CUSTOM
+@use "../custom" as *;
+
+// IMPORT THE MIXINS
+@use "../components/mixins" as *;
+
+// IMPORT THE EXTENDS
+@use "../components/extend" as *;
+
+// IMPORT THE GLOBAL COMPONENTS
+@use "../components/global-style" as *;
+
+// IMPORT THE BUTTONS COMPONENTS
+@use "../components/buttons" as *;
+
+// EXPERIENCE SECTION
+.experience-section{
+    background: $section-bg-color;
+
+    .experience-bg-image{
+        background: url(../images/experience-bg-img.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .experience-content{
+        padding: 6.5rem;
+    }
+    .nav-tabs{
+        margin-top: 1.2rem;
+    }
+    .tab-pane{
+
+        p{
+            padding-top: 1rem;
+        }
+    }
+}
+
+
+
+
+
+
+// MEDIA QUERY FOR ALL DEVICE
+
+// For Large Device
+@include media-breakpoint-down(xl){
+    .experience-section{
+        
+        .experience-bg-image{
+            padding: 2rem;
+        }
+        .experience-content{
+            padding: 2.5rem;
+        }
+    }
+}
+
+
+// For Medium Device
+@include media-breakpoint-down(lg){
+    .experience-section{
+        
+        .experience-bg-image{
+            padding: 2rem;
+        }
+        .experience-content{
+            padding: 1.3rem;
+        }
+    }
+}
+
+// For Small Device
+@include media-breakpoint-down(md){
+    .experience-section{
+        
+        .experience-bg-image{
+            padding: 5rem;
+        }
+        .experience-content{
+            padding: 2rem;
+        }
+    }
+}
+
+// For Mobile Device
+@include media-breakpoint-down(sm){
+    .experience-section{
+        
+        .experience-bg-image{
+            padding: 5rem;
+        }
+        .experience-content{
+            padding: 2rem;
+        }
+    }
+}

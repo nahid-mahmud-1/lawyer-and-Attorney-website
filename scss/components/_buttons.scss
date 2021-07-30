@@ -1,0 +1,14 @@
+// BOOTSTRAP AND CUSTOM
+@use "../custom" as *;
+
+// CUSTOM BUTTON STYLE
+.custom-button-style {
+    color: $white !important;
+    font-size: 0.75rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    padding: 0.6875rem 1.875rem !important;
+    border-radius: 0.1rem !important;
+}

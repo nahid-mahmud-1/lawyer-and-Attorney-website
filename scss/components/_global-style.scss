@@ -1,0 +1,37 @@
+// BOOTSTRAP AND CUSTOM
+@use "../custom" as *;
+
+// IMPORT THE MIXINS
+@use "../components/mixins" as *;
+
+// IMPORT THE EXTENDS
+@use "../components/extend" as *;
+
+// IMPORT THE BUTTONS COMPONENTS
+@use "../components/buttons" as *;
+
+.section-title-box{
+        
+    .section-title{
+        text-align: center;
+    }
+    .section-hr-line{
+        margin: 1rem auto;
+    }
+}
+.section-top-title{
+    color: $primary;
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+    margin-bottom: 1rem;
+}
+.section-hr-line{
+    width: 6.5rem;
+    height: 0.123rem;
+    background: $primary;
+    margin: 1rem 0rem;
+}
+.section-dsc{
+    margin-top: 0.5rem;
+}

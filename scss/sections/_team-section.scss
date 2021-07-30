@@ -1,0 +1,105 @@
+// BOOTSTRAP AND CUSTOM
+@use "../custom" as *;
+
+// IMPORT THE MIXINS
+@use "../components/mixins" as *;
+
+// IMPORT THE EXTENDS
+@use "../components/extend" as *;
+
+// IMPORT THE BUTTONS COMPONENTS
+@use "../components/buttons" as *;
+
+
+// TEAM SECTION STYLE START
+.team-section{
+    @include section-padding();
+    background: $white;
+
+    // .section-title{
+    //     text-align: center;
+    // }
+    // .section-hr-line{
+    //     margin: 1rem auto;
+    // }
+    .team-member-row{
+        margin-top: 2.5rem;
+
+        .team-item-box{
+
+            .team-item-img-box{
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                overflow: hidden;
+                @include theme-transition(0.9s ease-in-out);
+    
+                img{
+                    transform: scale(1);
+                    @include theme-transition(0.9s ease-in-out);
+                }
+                .social-box{
+                    background: $primary;
+                    display: flex;
+                    justify-content: space-between;
+                    position: absolute;
+                    bottom: 2rem;
+                    padding: 0rem 0.6rem;
+                    border-radius: 0.2rem;
+    
+                    a{
+                        color: $white;
+                        font-size: 0.875rem;
+                        padding: 0.8rem 0.5rem;
+                        display: inline-block;
+                    }
+                }
+    
+                &:hover{
+                    @include theme-box-shadow(0 40px 40px 0 rgb(10 10 10 / 10%));
+                    border-radius: 0.25rem;
+                }
+                &:hover img{
+                    transform: scale(1.05);
+                }
+            }
+            .team-item-label-box{
+                padding: 1.5rem 0rem;
+                text-align: center;
+                
+                h4{
+                    font-weight: 700;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+
+// MEDIA QUERY FOR ALL DEVICE
+
+// For Large Device
+@include media-breakpoint-down(lg){
+
+}
+
+//For Small Device
+@include media-breakpoint-down(md){
+
+}
+
+// For Mobile Device
+@include media-breakpoint-down(sm){
+    .team-section{
+        padding: 3rem 0rem;
+
+        .team-member-row{
+            margin-top: 2rem;
+        }
+    }
+}

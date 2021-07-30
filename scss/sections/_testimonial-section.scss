@@ -1,0 +1,106 @@
+// BOOTSTRAP AND CUSTOM
+@use "../custom" as *;
+
+// IMPORT THE MIXINS
+@use "../components/mixins" as *;
+
+// IMPORT THE EXTENDS
+@use "../components/extend" as *;
+
+// IMPORT THE GLOBAL COMPONENTS
+@use "../components/global-style" as *;
+
+// IMPORT THE BUTTONS COMPONENTS
+@use "../components/buttons" as *;
+
+
+// TESTIMONIALS SECTION STYLE
+.testimonials-section{
+    @include section-padding();
+    background: $white url(../images/testimonials-section-bg.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .section-title-box{
+        .section-title{
+            color: $white;
+        }
+        .section-hr-line{
+            margin-bottom: 2rem;
+        }
+    }
+    .testimonial-carousel{
+
+        .owl-dots{
+            margin-top: 2rem !important;
+
+            .owl-dot{
+                span{
+                    width: 0.525rem;
+                    height: 0.525rem;
+                }
+            }
+            .owl-dot.active span{
+                background: $primary;
+            }
+        }
+    }
+    .testimonial-box{
+        background: $bg-color-1;
+        padding: 3.5rem;
+    
+        .testimonial-inner-box{
+    
+            .testi-icon{
+                color: $primary;
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+            p{
+                color: $black;
+            } 
+            span{
+                color: $primary;
+                font-size: 0.975rem;
+            }       
+        }
+    }
+
+}
+
+
+
+
+// MEDIA QUERY FOR ALL DEVICE
+
+// For Large Device
+@include media-breakpoint-down(xl){
+    .testimonials-section{
+
+        .testimonial-box{
+            padding: 2.5rem;
+        }
+    }
+}
+
+// For Small Device
+@include media-breakpoint-down(md) {
+    .testimonials-section{
+        padding: 3.5rem 0rem;
+
+        .testimonial-box{
+            padding: 2.5rem;
+        }
+    }
+}
+
+// Mobile Device
+@include media-breakpoint-down(sm) {
+    .testimonials-section{
+        padding: 3.5rem 0rem;
+
+        .testimonial-box{
+            padding: 2.5rem;
+        }
+    }
+}

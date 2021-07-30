@@ -1,0 +1,8 @@
+https://www.designesia.com/themes/justica/index-2.html
+
+primary-color: #eaa636
+secondary-color: #111111
+white-light: #f8f9fa
+body-font-color: #606060
+Section-bg-color: #F2F2F2;
+

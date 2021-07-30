@@ -1,0 +1,10 @@
+// BOOTSTRAP AND CUSTOM
+@use "../custom" as *;
+
+//MIXINS
+@use "../components/mixins" as *;
+
+//EXTEND FOR SECTION SPACE
+%section-padding-extend{
+    @include section-padding();
+}

@@ -1,0 +1,90 @@
+// BOOTSTRAP AND CUSTOM
+@use "../custom" as *;
+
+// IMPORT THE MIXINS
+@use "../components/mixins" as *;
+
+// IMPORT THE EXTENDS
+@use "../components/extend" as *;
+
+// IMPORT THE GLOBAL COMPONENTS
+@use "../components/global-style" as *;
+
+// IMPORT THE BUTTONS COMPONENTS
+@use "../components/buttons" as *;
+
+/* INTRO SECTION START */
+.intro-section{
+    padding: 12rem 0rem 10rem;
+    background: $white url(../images/intro-images/intro-bg.jpg) no-repeat top;
+    background-size: cover;
+    background-attachment: fixed;
+    
+
+    .intro-top-title{
+        color: $primary;
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-bottom: 1.2rem;
+    }
+    .intro-title{
+        color: $white;
+        font-size: 3.1rem;
+    }
+    .intro-dsc{
+        color: $white-light-color;
+        font-weight: 300;
+        line-height: 1.7rem;
+        padding: 1rem 0rem;
+    }
+}
+
+
+
+
+// MEDIA QUERY FOR ALL DEVICES
+
+// For large devices
+@include media-breakpoint-down(xl){
+
+}
+
+// For Medium devices
+@include media-breakpoint-down(lg){
+    .intro-section{
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+
+        .intro-dsc{
+            width: 70%;
+        }
+    }
+}
+
+// For Small devices
+@include media-breakpoint-down(md){
+    .intro-section{
+        padding: 6rem 1rem;
+
+        .intro-top-title{
+            font-size: 1.2rem;
+        }
+        .intro-title{
+            font-size: 2.8125rem;
+        }
+    }
+}
+
+// For Extra-Small devicess
+@include media-breakpoint-down(sm){
+    .intro-section{
+        padding: 6rem 1rem;
+
+        .intro-top-title{
+            font-size: 1.2rem;
+        }
+        .intro-title{
+            font-size: 2.8125rem;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+// IMPORT THE CUSTOM SASS FILE
+@use "custom";
+// IMPORT THE COMPONENTS
+@use "./components/function";
+@use "./components/mixins";
+@use "./components/extend";
+@use "./components/global-style";
+@use "./components/typography";
+@use "./components/buttons";
+
+// IMPORT THE SECTIONS
+@use "./sections/header";
+@use "./sections/intro-section";
+@use "./sections/practice-area-section";
+@use "./sections/welcome-section";
+@use "./sections/experience-section";
+@use "./sections/all-practice-areas";
+@use "./sections/fun-fact";
+@use "./sections/team-section";
+@use "./sections/testimonial-section";
+@use "./sections/news-section";
+@use "./sections/footer";
+
+//IMPORT MEDIA QUERY
+@use "mediaQuery";

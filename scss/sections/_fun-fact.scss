@@ -1,0 +1,35 @@
+// BOOTSTRAP AND CUSTOM
+@use "../custom" as *;
+
+// IMPORT THE MIXINS
+@use "../components/mixins" as *;
+
+// IMPORT THE EXTENDS
+@use "../components/extend" as *;
+
+// IMPORT THE GLOBAL COMPONENTS
+@use "../components/global-style" as *;
+
+// IMPORT THE BUTTONS COMPONENTS
+@use "../components/buttons" as *;
+
+
+// FUN FACTS SECTION START
+.fun-facts-section{
+    @include section-padding();
+    padding: 6rem 0rem;
+    background: url(../images/fun-facts-section-bg.jpg) no-repeat center;
+    background-size: cover;
+
+    .section-top-title{
+        color: $white;
+    }
+    .section-title{
+        color: $white;
+    }
+    .section-dsc{
+        color: $white;
+        margin-top: 1.5rem;
+        margin-bottom: 0;
+    }
+}
