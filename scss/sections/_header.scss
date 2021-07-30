@@ -1,10 +1,13 @@
 // BOOTSTRAP AND CUSTOM
 @use "../custom" as *;
 
-// IMPORT THE MIXINS
+// IMPORT THE TYPOGRAPHY COMPONENTS
+@use "../components/typography" as *;
+
+// IMPORT THE MIXINS COMPONENTS
 @use "../components/mixins" as *;
 
-// IMPORT THE EXTENDS
+// IMPORT THE EXTENDS COMPONENTS
 @use "../components/extend" as *;
 
 // IMPORT THE GLOBAL COMPONENTS
@@ -12,6 +15,7 @@
 
 // IMPORT THE BUTTONS COMPONENTS
 @use "../components/buttons" as *;
+
 
 /* HEADER SECTION START */
 //header top

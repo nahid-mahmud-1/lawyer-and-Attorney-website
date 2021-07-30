@@ -1,1 +1,11 @@
-@use "../custom";
+@use "../custom" as *;
+
+
+@include media-breakpoint-down(sm){
+    h1{
+        
+    }
+    h2{
+        font-size: 2.25rem !important;
+    }
+}
