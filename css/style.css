@@ -10963,8 +10963,8 @@ textarea.form-control-lg {
 .practice-area-section .practice-area-item-box .custom-button-style {
   background: #111111;
   border-color: #111111;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
   margin-top: 1rem;
   -webkit-transition: 0.3s all;
   -moz-transition: 0.3s all;

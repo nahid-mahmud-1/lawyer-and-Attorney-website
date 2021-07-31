@@ -49,8 +49,8 @@
         .custom-button-style{
             background: $black;
             border-color: $black;
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
+            padding-top: 0.5rem !important;
+            padding-bottom: 0.5rem !important;
             margin-top: 1rem;
             @include theme-transition();
 
