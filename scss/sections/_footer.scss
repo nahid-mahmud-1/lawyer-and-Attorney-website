@@ -89,6 +89,31 @@
             color: white;
             margin-top: 1rem;
         }
+        .footer-subs-form{
+            .input-group{
+                
+                .form-control{
+                    background: rgba($white, 0.1);
+                    border-color: $black;
+                    @include theme-transition();
+
+                    &:focus{
+                        background: $white;
+                    }
+                }
+                .input-group-text{
+                    color: $white;
+                    font-size: 1.8rem;
+                    background: $primary !important;
+                    padding: 0.4rem 1.5rem;
+                    border-color: $black;
+                }
+            }
+            .form-label{
+                color: $white;
+                font-size: 0.7rem;
+            }
+        }
     }
     .footer-bottom{
         padding: 1.5rem 0rem;

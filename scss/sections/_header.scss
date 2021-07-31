@@ -108,3 +108,40 @@
 
 
 
+
+
+
+
+
+// MEDIA QUERY FOR ALL DEVICES
+
+// For X-small devices
+@include media-breakpoint-down(lg){
+    header{
+
+        .navbar{
+            .navbar-toggler{
+                color: $primary;
+                border-color: $primary;
+
+                .navbar-toggler-icon{
+                    
+                }
+            }
+
+            .main-menu{
+                margin-top: 2rem;
+
+                .nav-item{
+
+                    .nav-link{
+                        border-bottom: 1px solid $theme-gray;
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+

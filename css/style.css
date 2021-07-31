@@ -10860,6 +10860,19 @@ textarea.form-control-lg {
   margin-bottom: 0;
 }
 
+@media (max-width: 991.98px) {
+  header .navbar .navbar-toggler {
+    color: #eaa636;
+    border-color: #eaa636;
+  }
+  header .navbar .main-menu {
+    margin-top: 2rem;
+  }
+  header .navbar .main-menu .nav-item .nav-link {
+    border-bottom: 1px solid #eee;
+    padding-left: 0;
+  }
+}
 /* INTRO SECTION START */
 .intro-section {
   padding: 12rem 0rem 10rem;
@@ -11549,6 +11562,27 @@ textarea.form-control-lg {
 .footer-section .footer-top .footer-subs-text {
   color: white;
   margin-top: 1rem;
+}
+.footer-section .footer-top .footer-subs-form .input-group .form-control {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #111111;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.footer-section .footer-top .footer-subs-form .input-group .form-control:focus {
+  background: #fff;
+}
+.footer-section .footer-top .footer-subs-form .input-group .input-group-text {
+  color: #fff;
+  font-size: 1.8rem;
+  background: #eaa636 !important;
+  padding: 0.4rem 1.5rem;
+  border-color: #111111;
+}
+.footer-section .footer-top .footer-subs-form .form-label {
+  color: #fff;
+  font-size: 0.7rem;
 }
 .footer-section .footer-bottom {
   padding: 1.5rem 0rem;
